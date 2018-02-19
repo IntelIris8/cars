@@ -1,14 +1,39 @@
-<!-- Coin Flip HTML -->
+
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Coin Flipper</title>
-  </head>
-  <body>
+<html lang="en">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+
+</body>
+    <div class="container-fluid">
+
+
     <!-- The HTML is done for us. -->
     <h1>Cars</h1>
     <h2>Guess who drove what?</h2>
+
+    
+
     <button id="Dan">Dan</button>
     <button id="Alex">Alex</button>
      <button id="Bob">Bob</button>
@@ -21,26 +46,48 @@
     <div id="win-lose"></div>
     <div id="win-loss-tracker">
       <div>
-        <h3>Wins: </h3>
-        <span id="wins"></span>
-      </div>
-      <div>
-        <h3>Losses: </h3>
-        <span id="losses"></span>
-      </div>
-      <div>
-        <h3>Person chosen: </h3>
+      <div class="alert alert-warning" role="alert">
+Oh nice! Keep it up!
+</div>
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Car Demo</h4>
+  <p>The concept of this project is to make sure that we can make the information pop up the way we need it to. I created the prompts to dislay the neccesary information!</p>
+  <hr>
+  <p class="mb-0">When you press a button for one of the desired names, I will have the javascript load up what needs to be done. Notice how the bottom buttons don't work.</p>
+</div>
+<a href="#" class="badge badge-primary">Dan</a>
+<a href="#" class="badge badge-secondary">Alex</a>
+<a href="#" class="badge badge-success">Bob</a>
+
+        </div>
+
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Dan</h5>
+    <p class="card-text">Dan: 39 miles @ 47 mph</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Alex</h5>
+    <p class="card-text">42 miles @ 34 mph</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card text-right" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Bob</h5>
+    <p class="card-text">0 Miles</p>
+    <a href="#" class="btn btn-primary">Go nowhere</a>
+  </div>
+</div>
         <span id="Person-chosen"></span>
       </div>
     </div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="car.js"></script>
-  </body>
+</body>
+<script type="text/javascript" src="car.js"></script>
+
 </html>
-
-
-
-
-
-
- 

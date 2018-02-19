@@ -1,83 +1,138 @@
+/*
+// CRASH COURSE JS
+// ==========================================================
+// 1. BASIC VARIABLES
+// ==========================================================
+// Create a basic variable
+var name = "Dan";
+var name = "Bob";
+var name = "Alex";
+// 2. ARRAYS
+// ==========================================================
+// Create an array of five strings
+var threeArray = ["Dan", "Bob", "Alex",];
+// 3. FOR LOOPS
+// ==========================================================
+// Create a for loop that loops through and prints "My name is Bob five times"
+for (var i = 0; i < 3; i++) {
+  console.log("My name is Bob");
+}
+// Create a for loop that loops through your five string array and prints each name
+for (var i = 0; i < threeArray.length; i++) {
+  console.log("My name is " + threeArray[i]);
+}
+// 4. FUNCTIONS
+// ==========================================================
+// Create a function that takes two numbers and divides the first number by the second.
+// Then call that function
+var divider = function(num1, num2) {
+  var result = num1 / num2;
+  console.log(result);
+  return result;
+};
+// Prints 5
+divider(10, 2);
+// Create a function that takes in an array of strings and then loops through the array and prints out strings.
+// Then call that function
+var looper = function(arrayNumbers) {
+  for (var i = 0; i < arrayNumbers.length; i++) {
+    console.log(arrayNumbers[i]);
+  }
+};
+looper(threeArray);
+// 5. OBJECTS
 
 
-(function() {
-    function Driver(driver, trip, miles, mph, correct) {
-        this.driver = driver;
-        this.trip = trip;
-        this.miles = miles;
-        this.mph = mph;
+*/
+// ==========================================================
+// Create a JavaScript Object
 
-    }
+window.onload = startfunction
 
-    Question.prototype.displayQuestion = function() {
-        console.log(this.Driver);
+function startfunction() {
+    //Create an input type dynamically.   
+ 
+   
 
-        for (var i = 0; i < this.miles.length; i++) {
-            console.log(i + ': ' + this.miles[i]);
-        }
-    }
+    var Dan = document.getElementById("Dan");
 
-    Question.prototype.checkAnswer = function(ans, callback) {
-        var sc;
-        
-        if (ans === this.correct) {
-            console.log('Correct answer!');
-            sc = callback(true);
-        } else {
-            console.log('Wrong answer. Try again :)');
-            sc = callback(false);
-        }
-        
-        this.displayScore(sc);
-    }
 
-    Question.prototype.displayScore = function(score) {
-        console.log('Your current score is: ' + score);
-        console.log('----');
-    }
-    
-    
-    var q1 = new Driver(" What's the stat for Dan?"),
-                          ["Dan 715 173 mph", "Dan 212 100",],
-                          (0);
+    Dan.onclick = function() { // Note this is a function
+    alert("07:15 07:45 17.3");
+     };
+   
+    var Alex = document.getElementById("Alex");
 
-    var q2 = new Driver(" What's the stat for Alex?"),
-                          ["Alex 400 200" ,"Alex 612 218"],
-                          (1);
 
-    var q3 = new Driver(" What's the stat for Bob?"),
-                         [" Bob 200 1200", "Bob nine four", "Bob 1201 420"],
-                          (2);
-    
-    var questions = [q1, q2, q3];
-    
-    function score() {
-        var sc = 0;
-        return function(correct) {
-            if (correct) {
-                sc++;
-            }
-            return sc;
-        }
-    }
-    var keepScore = score();
-    
-    function nextDriver() {
-
-        var n = Math.floor(Math.random() * drivers.length);
-        drivers[n].displayDriver();
-
-        var answer = prompt('Please select the correct answer.');
-
-        if(answer !== 'exit') {
-            driver[n].checkMile(parseInt(miles), keepScore);
-            
-            nextDriver();
-        }
-    }
-    
-    nextDriver();
+    Alex.onclick = function() { // Note this is a function
+    alert("06:12 06:32 21.8");
+     };
 
 
 
+     var Bob = document.getElementById("Bob");
 
+
+    Bob.onclick = function() { // Note this is a function
+    alert("12:01 13:16 42.0");
+     };
+   }
+
+
+
+/*
+var Dan = {
+  time: "7:15",
+  distance: "7:45",
+  mPerHour: 17.3,
+
+  var Bob = {
+  time: "12:01",
+  distance: "6:32",
+  mPerHour: 42.0
+
+  var Alex = {
+  time: "6:12",
+  distance: "6:32",
+  mPerHour: 21.8
+
+  
+};
+// Console log any three of the properties in that object
+console.log(Dan.time);
+console.log(Dan.distance);
+console.log(Dan.mPerHour);
+
+console.log(Bob.time);
+console.log(Bob.distance);
+console.log(Bob.mPerHour);
+
+console.log(Alex.time);
+console.log(Alex.distance);
+console.log(Alex.mPerHour);
+// Create an Array of 3 Objects
+var threeObjects = [
+  {
+    name: "Dan",
+    brand: "Honda",
+    carsDestroyed: 2001
+  },
+  {
+    name: "Bob",
+    brand: "Toyota",
+    carsDestroyed: 500
+  },
+  {
+    name: "Alex",
+    brand: "Sam",
+    carsDestroyed: 2
+  }
+];
+// Console log 3 properties for every one of the five objects
+for (var i = 0; i < threeObjects; i++) {
+  console.log(threeObjects[i].name);
+  console.log(threeObjects[i].brand);
+  console.log(threeObjects[i].carsDestroyed);
+}
+
+*/
